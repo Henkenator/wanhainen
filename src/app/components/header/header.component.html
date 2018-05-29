@@ -1,68 +1,116 @@
-<!--<div>
-  <div class="row">
-    <span>Advokatfirman Peter Wanhainen AB</span>
-  </div>
-
-  <div class="row">
-    <div class="col-2"><a routerLink="" routerLinkActive="active">Start</a></div>
-    <div class="col-2"><a routerLink="associates" routerLinkActive="active">Medarbetare</a></div>
-    <div class="col-2"><a routerLink="collaborators" routerLinkActive="active">Samarbete</a></div>
-    <div class="col-2"><a routerLink="contact" routerLinkActive="active">Kontakt</a></div>
-  </div>
-<hr>
-</div>-->
-
+<!--
 <span style="font-family: Georgia, sans-serif ">Advokatfirman Peter Wanhainen AB</span>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <!--<div class="navbar-header">
-      <a class="navbar-brand">
-        <!--<img src="assets/img/ngx-bootstrap.svg" class="logo">-->
-      <!--</a>
-      <span class="navbar-brand">Advokatfirman Peter Wanhainen AB</span>
-    </div>-->
-    <!--<ul class="nav navbar-nav">
-      <li class="active"><a routerLink="" routerLinkActive="active">Start</a></li>
-      <li><a routerLink="contact" routerLinkActive="active">Kontakt</a></li>
-      <li class="dropdown" dropdown>
-        <a dropdownToggle role="button">
-          Medarbetare<span class="caret"></span></a>
-        <ul *dropdownMenu class="dropdown-menu">
-          <li><a routerLink="associates" routerLinkActive="active">Peter Wanhainen</a></li>
-          <li><a routerLink="associates" routerLinkActive="active">Kristina Wanhainen</a></li>
+    <div class="navbar-header">
 
-        </ul>
-      </li>
-    </ul>-->
-    <a routerLink="" routerLinkActive="active">Start</a>
-    <a routerLink="verksamhetsomraden" routerLinkActive="active">Verksamhetsområden</a>
+      <ul class="nav navbar-nav">
+        <li><a routerLink="" routerLinkActive="active">Start</a></li>
+        <li><a routerLink="verksamhetsomraden" routerLinkActive="active">Verksamhetsområden</a></li>
 
-    <div ngbDropdown class="d-inline-block">
-      <button class="btn" id="dropdownBasic1" ngbDropdownToggle>Medarbetare</button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-        <button class="dropdown-item"><a routerLink="medarbetare" routerLinkActive="active">Peter Wanhainen</a></button>
-        <button class="dropdown-item"><a routerLink="medarbetare" routerLinkActive="active">Kristina Wanhainen</a></button>
-      </div>
+        <li>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn" id="dropdownBasic1" ngbDropdownToggle>Medarbetare</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button class="dropdown-item"><a routerLink="medarbetare" routerLinkActive="active">Peter Wanhainen</a>
+              </button>
+              <button class="dropdown-item"><a routerLink="medarbetare" routerLinkActive="active">Kristina Wanhainen</a>
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn" id="dropdownBasic2" ngbDropdownToggle>Samarbeten</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+              <button class="dropdown-item"><a routerLink="samarbeten" routerLinkActive="active">Åke Broné</a></button>
+            </div>
+          </div>
+        </li>
+
+        <li><a routerLink="kontakt" routerLinkActive="active">Kontakta oss</a></li>
+
+      </ul>
+
     </div>
-
-    <div ngbDropdown class="d-inline-block">
-      <button class="btn" id="dropdownBasic2" ngbDropdownToggle>Samarbeten</button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-        <button class="dropdown-item"><a routerLink="samarbeten" routerLinkActive="active">Åke Broné</a></button>
-      </div>
-    </div>
-
-    <a routerLink="kontakt" routerLinkActive="active">Kontakta oss</a>
-
   </div>
 </nav>
 
 
+<hr>-->
+<!--
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<hr>
-<!--<button type="button" class="btn btn-primary"
-        tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Button with tooltip
-</button>-->
+-->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" routerLink=""><img src="../assets/img/logo.jpg" alt="Image"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <!--<a class="nav-link" href="#">Start <span class="sr-only">(current)</span></a>-->
+        <a class="nav-link" routerLink="" routerLinkActive="active">Start</a>
+      </li>
+      <li class="nav-item">
+        <!--<a class="nav-link" href="#">Verksamhetsområden</a>-->
+        <a class="nav-link" routerLink="verksamhetsomraden" routerLinkActive="active">Verksamhetsområden</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="medarbetare" routerLinkActive="active">Medarbetare</a>
+        <!--<a class="nav-link" href="#">Medarbetare</a>-->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="samarbeten" routerLinkActive="active">Samarbeten</a>
+        <!--<a class="nav-link" href="#">Samarbeten</a>-->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="kontakt" routerLinkActive="active">Kontakta oss</a>
+        <!--<a class="nav-link" href="#">Kontakta oss</a>-->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="english" routerLinkActive="active">In English</a>
+        <!--<a class="nav-link" href="#">In English</a>-->
+      </li>
+      <!--<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>-->
+    </ul>
+  </div>
+</nav>
